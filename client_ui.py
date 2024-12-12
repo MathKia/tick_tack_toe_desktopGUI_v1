@@ -1,7 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QLabel
 from PyQt5 import uic
-import sys
-from client_controller import Controller
 from PyQt5.QtCore import QTimer
 
 
