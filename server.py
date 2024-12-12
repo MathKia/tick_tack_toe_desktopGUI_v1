@@ -139,35 +139,6 @@ if __name__ == "__main__":
     PORT = 12345
     client = TicTacToeServer(HOST, PORT)
 
-
-
-
-#
-
-#     def game_loop(self):
-#
-#         self.broadcast(subject=ALLOWED, msg=self.allowed_moves)
-#         self.send_msg(subject=TURN, msg=True, c=self.clients[0])
-#         self.send_msg(subject=TURN, msg=False, c=self.clients[1])
-#         self.broadcast(GAME_ON, True)
-#
-#         while self.game_on:
-#
-#             self.turn = X if self.counter % 2 == 0 else O
-#
-#             if self.turn == X:
-#                 self.current_player = self.clients[0]
-#                 self.non_current_player = self.clients[1]
-#             elif self.turn == O:
-#                 self.current_player = self.clients[1]
-#                 self.non_current_player = self.clients[0]
-#
-#             self.send_msg(TURN, True, self.current_player)
-#             self.send_msg(TURN, False, self.non_current_player)
-#             player_move = self.current_player.recv(1024).decode('utf-8')
-#             self.make_move(move=player_move, player=self.current_player)
-#             self.send_msg(OPP_MOVE, player_move, self.non_current_player)
-#             self.counter += 1
 #
 #             if self.check_winner():
 #                 self.game_on = False
